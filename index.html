@@ -37,10 +37,11 @@
 
     <section id="projects">
       <h3 class="text-2xl font-bold mb-4">Interactive Research Topics</h3>
+      
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
           <button class="w-full text-left p-4" @click="open = !open">
-            <h4 class="text-lg font-semibold">Quantum Control</h4>
+            <h4 class="text-lg font-semibold">Magnetic sensors</h4>
             <p class="text-sm text-gray-600">Coherent averaging, polyhedral symmetries, and pulse sequences.</p>
           </button>
           <div class="px-4 pb-4" x-show="open" x-cloak>
@@ -50,11 +51,11 @@
           </div>
         </div>
       </div>
-
+</br>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
           <button class="w-full text-left p-4" @click="open = !open">
-            <h4 class="text-lg font-semibold">Quantum Control</h4>
+            <h4 class="text-lg font-semibold">Low-field NMR</h4>
             <p class="text-sm text-gray-600">Coherent averaging, polyhedral symmetries, and pulse sequences.</p>
           </button>
           <div class="px-4 pb-4" x-show="open" x-cloak>
@@ -64,7 +65,7 @@
           </div>
         </div>
       </div>
-
+</br>
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
           <button class="w-full text-left p-4" @click="open = !open">
@@ -79,7 +80,21 @@
         </div>
       </div>
     </section>
-
+</br>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
+          <button class="w-full text-left p-4" @click="open = !open">
+            <h4 class="text-lg font-semibold">Open source hardware</h4>
+            <p class="text-sm text-gray-600">Coherent averaging, polyhedral symmetries, and pulse sequences.</p>
+          </button>
+          <div class="px-4 pb-4" x-show="open" x-cloak>
+            <img src="images/quantum-control.jpg" alt="Quantum diagram" class="rounded mb-2">
+            <p class="text-sm">Using geometric symmetries to suppress decoherence in driven quantum systems. Includes simulations, papers, and downloadable tools.</p>
+            <a href="project-quantum.html" class="text-indigo-600 hover:underline text-sm">Full project page →</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <h3 class="text-2xl font-bold mb-4">Contact</h3>
       <p>Email: <a href="mailto:email@university.edu" class="text-indigo-600 hover:underline">email@university.edu</a></p>
