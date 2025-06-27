@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Alex Scientist</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.4.2/dist/cdn.min.js" defer></script>
+  <style>
+    [x-cloak] { display: none !important; }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+  <header class="bg-gray-900 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-semibold">Dr. Alex Scientist</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#publications" class="hover:underline">Publications</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <section id="hero" class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white text-center py-20">
+    <h2 class="text-4xl font-bold mb-4">Explore My Scientific World</h2>
+    <p class="text-lg">Projects, Publications, and Tools for the Curious Mind</p>
+  </section>
+  <main class="container mx-auto px-4 py-10 space-y-20">
+    <section id="about">
+      <h3 class="text-2xl font-bold mb-4">About Me</h3>
+      <p>I’m a physicist exploring NMR, quantum control, and computational materials. My work combines theoretical models, experiment design, and open-source tools.</p>
+    </section>
+    <section id="projects">
+      <h3 class="text-2xl font-bold mb-4">Interactive Research Topics</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
+          <button class="w-full text-left p-4" @click="open = !open">
+            <h4 class="text-lg font-semibold">Quantum Control</h4>
+            <p class="text-sm text-gray-600">Coherent averaging, polyhedral symmetries, and pulse sequences.</p>
+          </button>
+          <div class="px-4 pb-4" x-show="open" x-cloak>
+            <img src="images/quantum-control.jpg" alt="Quantum diagram" class="rounded mb-2">
+            <p class="text-sm">Using geometric symmetries to suppress decoherence in driven quantum systems. Includes simulations, papers, and downloadable tools.</p>
+            <a href="project-quantum.html" class="text-indigo-600 hover:underline text-sm">Full project page →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="publications">
+      <h3 class="text-2xl font-bold mb-4">Publications</h3>
+      <ul class="space-y-4">
+        <li>
+          <strong>Smith et al., 2024.</strong> <em>Precision Control of Rotating Frame Dynamics.</em><br>
+          <a href="papers/smith2024_author.pdf" class="text-indigo-600 hover:underline">[Author PDF]</a>
+          <a href="https://doi.org/10.xxxx/journal.paper" class="text-indigo-600 hover:underline ml-4">[DOI]</a>
+        </li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h3 class="text-2xl font-bold mb-4">Contact</h3>
+      <p>Email: <a href="mailto:alex.scientist@university.edu" class="text-indigo-600 hover:underline">alex.scientist@university.edu</a></p>
+    </section>
+  </main>
+  <footer class="bg-gray-100 text-center p-4 text-sm text-gray-600">
+    © 2025 Dr. Alex Scientist. Powered by GitHub Pages.
+  </footer>
+</body>
+</html>
