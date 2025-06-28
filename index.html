@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -61,6 +61,23 @@ h<!DOCTYPE html>
         </div>
       </div>
 </br>
+      <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
+  <button class="w-full text-left p-4" @click="open = !open">
+    <h4 class="text-lg font-semibold">Low-field NMR</h4>
+    <p class="text-sm text-gray-600">Open-source NMR tools for field-cycling, signal detection, and compact magnet systems.</p>
+  </button>
+  <div class="px-4 pb-4" x-show="open" x-cloak>
+    <img src="images/nmrduino-setup.jpg" alt="NMRduino setup" class="rounded mb-2">
+    <p class="text-sm mb-2">We develop modular, open-source NMR hardware and software for low-field and zero-field experiments. These platforms are used for spectroscopy, imaging, and field-cycling studies.</p>
+    <ul class="list-disc list-inside text-sm space-y-1">
+      <li><a href="https://github.com/NMRduino/NMRduino" target="_blank" class="text-indigo-600 hover:underline">NMRduino: Open-source modular NMR platform</a></li>
+      <li><a href="https://github.com/MichaelTayler" target="_blank" class="text-indigo-600 hover:underline">Michael Tayler on GitHub</a> — Tools, firmware, and educational systems</li>
+    </ul>
+    <a href="project-quantum.html" class="text-indigo-600 hover:underline text-sm mt-2 inline-block">Full project page →</a>
+  </div>
+</div>
+
+      
       <div class="grid md:grid-cols-3 gap-6">
         <div class="bg-white border rounded-xl shadow hover:shadow-2xl transition" x-data="{ open: false }">
           <button class="w-full text-left p-4" @click="open = !open">
